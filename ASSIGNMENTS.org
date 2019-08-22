@@ -3,4 +3,7 @@
 #+EMAIL:	joeymazzarelli@boisestate.edu
 
 * Homework 0
-*git setup* download and install git if needed
+
+Getting start with =git= and =submit=
+
+file:./hw-0/README.org

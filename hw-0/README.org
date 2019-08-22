@@ -1,5 +1,7 @@
 #+TITLE:	Homework 0
 
+Homework 0 is found in the =hw-0= branch.
+
 #+BEGIN_SRC bash
 cd ~/CS-401
 git fetch origin
