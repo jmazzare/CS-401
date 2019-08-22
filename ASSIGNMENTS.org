@@ -1,1 +1,6 @@
-* CS401-003 Assignments
+#+TITLE:	Assignments for CS401-003 / Fall 2019
+#+AUTHOR:	Joey Mazzarelli
+#+EMAIL:	joeymazzarelli@boisestate.edu
+
+* Homework 0
+*git setup* download and install git if needed

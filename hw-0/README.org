@@ -1,0 +1,10 @@
+#+TITLE:	Homework 0
+
+#+BEGIN_SRC bash
+cd ~/CS-401
+git fetch origin
+git checkout hw-0
+emacs hw-0/README.org
+#+END_SRC
+
+https://github.com/jmazzare/CS-401/blob/hw-0/hw-0/README.org

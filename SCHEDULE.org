@@ -1,3 +1,7 @@
+#+TITLE:	Class Schedule for CS401-003 / Fall 2019
+#+AUTHOR:	Joey Mazzarelli
+#+EMAIL:	joeymazzarelli@boisestate.edu
+
 * Class Schedule (subject to change)
 ** TODO <2019-08-27 Tue> How the Web Works
 *** Overview

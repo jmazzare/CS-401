@@ -1,10 +1,49 @@
-* CS401-003: Introduction to Web Development Fall 2019
-** Details
-*** When: TuTh 4:30PM - 5:45PM
-*** Where: City Center Plaza Rm 243
-*** Who: Joey Mazzarelli
-*** What: https://github.com/jmazzare/CS-401/blob/master/README.org
-** [[file:./syllabus.pdf][Syllabus]]
-** [[file:./SCHEDULE.org][Class Schedule]]
-** [[file:./ASSIGNMENTS.org][Assignments]]
-** [[file:./GETTING-STARTED.org][Getting Started]]
+#+TITLE:	README for CS401-003 / Fall 2019
+#+AUTHOR:	Joey Mazzarelli
+#+EMAIL:	joeymazzarelli@boisestate.edu
+#+COURSE:	CS401-003
+#+ROOM:	City Center Plaza Rm 243
+#+WHEN:	TuTh 4:30PM - 5:45PM
+
+https://github.com/jmazzare/CS-401/blob/master/README.org
+
+* Getting Started
+
+** Syllabus
+
+Download and read the [[file:./syllabus.pdf][class syllabus]]. It covers:
+
+- Learning Objectives / Textbook
+- Attendance and Grading Policy
+- Student Responsibilities
+
+** Class Information
+
+We will be using =git= class information and assignments.
+
+=git= can be installed from https://git-scm.com or via your package manager (apt, rpm, homebrew, etc).
+
+Clone the class repository:
+#+BEGIN_SRC bash
+cd ~
+git clone https://github.com/jmazzare/CS-401.git
+cd ./CS-401
+#+END_SRC
+
+Periodically update your copy of the class material:
+#+BEGIN_SRC bash
+cd ~/CS-401
+git pull
+#+END_SRC
+
+/You do *not* need a GitHub account/
+
+
+* Class Schedule
+
+Find the [[file:./SCHEDULE.org][latest schedule here]]. It will change during the semester as needed.
+
+* Assignements
+
+Find the [[file:./ASSIGNMENTS.org][list of assignments here]].
+
