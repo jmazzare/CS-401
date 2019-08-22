@@ -1,0 +1,103 @@
+* Class Schedule (subject to change)
+** TODO <2019-08-27 Tue> How the Web Works
+*** Overview
+In this lesson, we will explore how websites work, their structure, and how information is communicated across the Internet.
+** TODO <2019-08-29 Thu> Basic Web Design
+*** Overview
+In this lesson, we will evaluate the design and usability of existing websites to gain an understanding of what makes a quality website.
+** TODO <2019-09-03 Tue> HTML Basics
+*** Overview
+In this lesson, we will investigate website structure and introduce basic HTML elements. We will explore various tools for web development and setup static website hosting through GitHub.
+** TODO <2019-09-05 Thu> Styling with CSS
+*** Overview
+In this lesson, we will learn how to style our websites using Cascading Style Sheets (CSS).
+** TODO <2019-09-10 Tue> HTML5 Semantic Layout Elements
+*** Overview
+In this lesson, we will learn how to define different parts of our webpage using HTML5 semantic elements to provide a template for styling and improve accessibility for screen readers.
+** TODO <2019-09-12 Thu> CSS3 Position and Float
+*** Overview
+In this lesson, we will explore how to modify the layout of our webpage using CSS position and float.
+** TODO <2019-09-17 Tue> PHP Basics & Configuration
+*** Overview
+In this lesson, we will introduce server-side programming using a language called PHP. We will explore basic syntax, control-flow, types, functions, and using embedded PHP to create dynamic HTML documents. We will also introduce techniques for debugging PHP programs.
+** TODO <2019-09-19 Thu> HTML Templating with PHP
+*** Overview
+In this lesson, we will continue to explore PHP for web applications. We will introduce techniques for creating HTML templates using PHP includes.
+** TODO <2019-09-24 Tue> Object-Oriented PHP
+*** Overview
+In this lesson, we will explore object-oriented PHP concepts. We will look at basic syntax for defining and using classes and methods.
+** TODO <2019-09-26 Thu> Form Processing
+*** Overview
+In this lesson, we will look into what it takes to securely handle form data on our websites.
+** TODO <2019-09-01 Sun> Sanitization, Validation and Session Basics
+*** Overview
+In this lesson, we will validate our form data using client-side and server-side validation techniques and discuss the benefits and pitfalls of each method. We will use basic sessions to persist error messages across user page requests.
+** TODO <2019-10-03 Thu> Database Design and SQL
+*** Overview
+In this lesson, we will look at designing database tables and queries for storing and accessing our website data.
+** TODO <2019-10-08 Tue> PHP Data Objects (PDO)
+*** Overview
+In this lesson, we will use PHP Data Objects (PDO)  to connect to and modify our MySQL database based on user input.
+** TODO <2019-10-10 Thu> More SQL
+*** Overview
+In this lesson, we will use continue using PHP Data Objects (PDO)  to connect to and modify our MySQL database based on user input.
+** TODO <2019-10-15 Tue> Cookies and Sessions
+*** Overview
+In this lesson, you will learn how to use sessions to implement login/logout functionality.
+** TODO <2019-10-17 Thu> Authentication and Password Hashing
+*** Overview
+In this lesson, we will discuss how to securely store passwords and other sensitive information in the user database.
+** TODO <2019-10-22 Tue> Authentication and Password Hashing
+*** Overview
+In this lesson, we will discuss how to securely store passwords and other sensitive information in the user database.
+** TODO <2019-10-24 Thu> Logging, Composer, Midterm Review
+*** Overview
+In this lesson, we will discuss how to manage library dependencies using Composer. We will look at the mongolog library for logging.
+** TODO <2019-10-29 Tue> In-Class Midterm
+*** Overview
+N/A
+** TODO <2019-10-31 Thu> APIs, REST
+*** Overview
+In this lesson, we will discuss and demonstrate Web APIs.
+** TODO <2019-11-05 Tue> JavaScript Basics
+*** Overview
+In this lesson, we will learn how to create dynamic client-side web pages using event-driven programming in JavaScript. We will also investigate the basics of the Document Object Model (DOM) and how to access and manipulate elements of the DOM using JavaScript.
+** TODO <2019-11-07 Thu> jQuery
+*** Overview
+In this lesson, we will introduce jQuery - a fast, small, feature-rich JavaScript library.
+** TODO <2019-11-12 Tue> AJAX, JSON
+*** Overview
+In this lesson, we will discuss and demonstrate how to use Asynchronous JavaScript and XML (AJAX) to create asynchronous web applications allowing us to change the content of our web pages without reloading the entire page. We will also discuss JavaScript Object Notation (JSON) - a popular format for exchanging data between a web server and client.
+** TODO <2019-11-14 Thu> Web Accessibility
+*** Overview
+In this lesson, we will discuss web accessibility standards and why it is important to make websites accessible.
+** TODO <2019-11-19 Tue> Security, common exploits
+*** Overview
+In this lesson, we will explore common website attacks and how to prevent them.
+** TODO <2019-11-21 Thu> Security, best practices
+*** Overview
+In this lesson, we will improve our website security by implementing best practices on our web server.
+** TODO <2019-11-26 Tue> No class (Thanksgiving)
+*** Overview
+N/A
+** TODO <2019-11-28 Thu> No class (Thanksgiving)
+*** Overview
+N/A
+** TODO <2019-12-03 Tue> Frameworks, MVC
+*** Overview
+In this lesson, we will introduce the concept of a web framework and the Model-View-Controller (MVC) pattern.
+** TODO <2019-12-05 Thu> Project Presentations
+*** Overview
+N/A
+** TODO <2019-12-10 Tue> Project Presentations
+*** Overview
+N/A
+** TODO <2019-12-12 Thu> Project Presentations
+*** Overview
+N/A
+** TODO <2019-12-17 Tue> Final Exam?
+*** Overview
+N/A
+** TODO <2019-12-19 Thu> Final Exam?
+*** Overview
+N/A

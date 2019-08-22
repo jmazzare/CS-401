@@ -1,0 +1,9 @@
+* CS401-003: Introduction to Web Development Fall 2019
+** Details
+:class: CS401-003
+:instructor: Joey Mazzarelli
+:time: TuTh 4:30PM - 5:45PM
+:location: City Center Plaza Rm 243
+** [[file+emacs:./syllabus.pdf][Syllabus]]
+** [[file+emacs:./SCHEDULE.org][Class Schedule]]
+** [[file+emacs:./ASSIGNMENTS.org][Assignments]]
