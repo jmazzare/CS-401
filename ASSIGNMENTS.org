@@ -6,4 +6,4 @@
 
 Getting start with =git= and =submit=
 
-file:./hw-0/README.org
+[[file:./hw-0/README.org]]
