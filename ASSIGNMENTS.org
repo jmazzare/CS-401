@@ -2,8 +2,8 @@
 #+AUTHOR:	Joey Mazzarelli
 #+EMAIL:	joeymazzarelli@boisestate.edu
 
+[[file:./README.org][class info]]
+
 * Homework 0
-
-Getting start with =git= and =submit=
-
+Project Analysis
 [[file:./hw-0/README.org]]
