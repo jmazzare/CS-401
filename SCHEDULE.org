@@ -33,7 +33,7 @@ In this lesson, we will explore object-oriented PHP concepts. We will look at ba
 ** TODO <2019-09-26 Thu> Form Processing
 *** Overview
 In this lesson, we will look into what it takes to securely handle form data on our websites.
-** TODO <2019-09-01 Sun> Sanitization, Validation and Session Basics
+** TODO <2019-10-01 Sun> Sanitization, Validation and Session Basics
 *** Overview
 In this lesson, we will validate our form data using client-side and server-side validation techniques and discuss the benefits and pitfalls of each method. We will use basic sessions to persist error messages across user page requests.
 ** TODO <2019-10-03 Thu> Database Design and SQL
