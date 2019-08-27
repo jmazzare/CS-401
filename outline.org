@@ -1,0 +1,80 @@
+* introduction
+** guage experience of students
+how many have:
+*** seen HTML?
+*** edited HTML?
+*** CSS?
+**** different versions?
+**** preprocessors?
+*** Javascript?
+**** different versions?
+**** frameworks
+***** jQuery?
+***** React?
+***** Angular?
+***** other?
+*** PHP?
+*** Other server side languages? Ruby, Python, .Net, Java, Perl
+*** Databases? Which ones?
+*** Web Servers; apache, nginx, IIS
+*** git?
+** goals
+*** understand frameworks feature
+**** scaffolding
+the directory structure and naming conventions
+**** templating
+programmatically generate web pages
+**** routing
+map URLs to code functions
+**** data layer
+access to databases, ORM
+**** security
+**** caching
+**** services
+REST, Auth, SOAP, Input Validation
+**** AJAX
+** survey of the state of the art
+*** different languages and frameworks
+** other recurring themes
+*** usability
+**** vision impaired
+**** screen sizes
+*** maintainability, agility
+** project
+develop a product inventory website
+** tools
+*** command line
+*** git
+*** browser
+*** dev tools
+*** rest client
+* html
+** https://www.w3.org/TR/2012/WD-html-markup-20121025/elements-by-function.html
+*** text level
+*** tables
+*** sections/groups
+*** form inputs
+* css
+** properties
+*** style
+*** layout
+** selectors
+* php basics
+* php templating
+* php architecture
+* database programming
+* HTTP, DNS
+** urls
+** query string
+** post data
+** headers
+* server side PHP
+** logging
+* routing
+* sessions
+* forms (html)
+* login flow
+* user database setup
+* validation
+* caching
+
