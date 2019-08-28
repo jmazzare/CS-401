@@ -5,7 +5,10 @@
 #+ROOM:	City Center Plaza Rm 243
 #+WHEN:	TuTh 4:30PM - 5:45PM
 
-https://github.com/jmazzare/CS-401/blob/master/README.org
+The latest version of the class website is always found by:
+1. Going to https://github.com/jmazzare/CS-401/blob/master/README.org
+2. On onyx ssh://onyx.boisestate.edu/~JOEYMAZZARELLI/CS-401
+3. cloning and updating this repo (at GitHub)
 
 * Getting Started
 
