@@ -19,7 +19,7 @@ Download and read the [[file:./syllabus.pdf][class syllabus]]. It covers:
 
 ** Class Information
 
-We will be using =git= class information and assignments.
+We will be using =git= for class information and assignments.
 
 =git= can be installed from https://git-scm.com or via your package manager (apt, rpm, homebrew, etc).
 
@@ -45,5 +45,4 @@ Find the [[file:./SCHEDULE.org][latest schedule here]]. It will change during th
 
 * Assignements
 
-Find the [[file:./ASSIGNMENTS.org][list of assignments here]].
-
+Find the [[file:./ASSIGNMENTS.org][current list of homework assignments here]].

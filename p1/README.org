@@ -1,0 +1,67 @@
+#+TITLE:	p0
+[[file:../ASSIGNMENTS.org][back to all]]
+
+* Objectives
+1. To gather high-level details for your semester project.
+2. To learn the workflow and submission process for homework assignments.
+
+* Instructions
+This semester you will build a discussion board.
+
+** Discussion Board Theme
+Pick a specific topic or theme that discussion baord will be about.
+
+Examples:
+- DIY Projects
+- Camping and Hiking
+- A favorite band/sports team/destination
+
+*Requirements*
+*** Theme of discussions taking place
+*** List 3-5 categories
+*** List 3-5 example message topics per category
+
+** User Roles
+Every website expects to have users. The users all have roles. For example, if
+someone is logged out, they might be considered a "visitor". After they log in,
+they may become an "admin".
+
+What are the roles of a discussion board?
+
+[[https://www.phpbb.com/about/][phpBB]] is an open source discussion board. Use a demo instance of phpBB to answer
+the following question. [[https://www.phpbb.com/demo/][phpBB demo instructions]]
+
+*** Preparation
+**** _Before_ logging in as an admin, register as a new user.
+***** Login
+***** Logout
+**** Log into phpBB as the admin, as described in the instructions above.
+***** From within the administrative control panel, find the user you created above.
+***** Find where to change the permissions for this user
+***** Find the dropdown with permission types, and take note of the options.
+
+*** Requirements
+**** What permissions are listed in the permission types for the user?
+**** For each of these permissions, describe that role in in your discussion board:
+***** What can that user do?
+***** What are some "actions" they will take?
+
+** Domain Name
+Find a domain name that fits the theme of the website. You /do not/ need to
+purchase the domain name, only find one.
+
+*Requirements*
+*** What is the domain name?
+*** Explain how/where you found this domain name.
+*** What is the intended use of the TLD you chose?
+
+
+* Submission
+Finish the work above in a file [[file:./YOURNAME.txt]].
+- Plain text.
+- No Word docs, no PDFs, no RTFs.
+
+From the directory containing your work, run the =submit= command from =onyx=.
+
+=submit jmazzare cs401 p1=
+This command will pick up all files in the current directory (as well as any subdirectories recursively) and time-stamp them before transferring the combined files to the instructor’s account.
