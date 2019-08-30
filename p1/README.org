@@ -1,4 +1,4 @@
-#+TITLE:	p0
+#+TITLE:	p1
 [[file:../ASSIGNMENTS.org][back to all]]
 
 * Objectives
@@ -55,10 +55,12 @@ purchase the domain name, only find one.
 *** Explain how/where you found this domain name.
 *** What is the intended use of the TLD you chose?
 
+* Due Date
+The assignment is due by the end of the day (midnight), Thursday Sept 5th.
 
 * Submission
 Finish the work above in a file [[file:./YOURNAME.txt]].
-- Plain text.
+- Plain text only.
 - No Word docs, no PDFs, no RTFs.
 
 From the directory containing your work, run the =submit= command from =onyx=.
