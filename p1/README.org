@@ -65,5 +65,5 @@ Finish the work above in a file [[file:./YOURNAME.txt]].
 
 From the directory containing your work, run the =submit= command from =onyx=.
 
-=submit jmazzare cs401 p1=
+=submit joeymazzarelli cs401 p1=
 This command will pick up all files in the current directory (as well as any subdirectories recursively) and time-stamp them before transferring the combined files to the instructor’s account.
