@@ -22,17 +22,14 @@ Examples:
 *** List 3-5 example message topics per category
 
 ** User Roles
-Every website expects to have users. The users all have roles. For example, if
-someone is logged out, they might be considered a "visitor". After they log in,
-they may become an "admin".
+Every website expects to have users. The users all have roles. For example, if someone is logged out, they might be considered a "visitor". After they log in, they may become an "admin".
 
 What are the roles of a discussion board?
 
-[[https://www.phpbb.com/about/][phpBB]] is an open source discussion board. Use a demo instance of phpBB to answer
-the following question. [[https://www.phpbb.com/demo/][phpBB demo instructions]]
+[[https://www.phpbb.com/about/][phpBB]] is an open source discussion board. Use a demo instance of phpBB to answer the following question. [[https://www.phpbb.com/demo/][phpBB demo instructions]]
 
 *** Preparation
-**** _Before_ logging in as an admin, register as a new user.
+**** /Before/ logging in as an admin, register as a new user.
 ***** Login
 ***** Logout
 **** Log into phpBB as the admin, as described in the instructions above.
@@ -46,9 +43,17 @@ the following question. [[https://www.phpbb.com/demo/][phpBB demo instructions]]
 ***** What can that user do?
 ***** What are some "actions" they will take?
 
+*** Alternate Requirements (if phpBB is unavailable, or if you prefer)
+A discussion board will often have the roles:
+- =visitor= An anonymous or unregistered user.
+- =member= A user that can participate in the discussions.
+- =moderator= A =member= with access to the comments and posts of other =members=
+- =admin= A user with access to administrative functions of the discussion board.
+
+**** Name 3 specific actions, or things the user might do, for each of the roles listed above.
+
 ** Domain Name
-Find a domain name that fits the theme of the website. You /do not/ need to
-purchase the domain name, only find one.
+Find a domain name that fits the theme of the website. You *do not* need to purchase the domain name, only find one.
 
 *Requirements*
 *** What is the domain name?
