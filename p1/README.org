@@ -65,12 +65,13 @@ The assignment is due by the end of the day (midnight), Thursday Sept 5th.
 
 * Submission
 Finish the work above in a file [[file:./YOURNAME.txt]].
-- Answer/finish parts:
----- 1.1 - 1.3
----- 2.1 - 2.2.b /or/ 2.3
----- 3.1 - 3.3
-- Plain text only.
-- No Word docs, no PDFs, no RTFs.
+
+** Answer/finish parts:
+*** 1.1 - 1.3
+*** 2.1 - 2.2.b /or/ 2.3
+*** 3.1 - 3.3
+** Plain text only.
+** No Word docs, no PDFs, no RTFs.
 
 From the directory containing your work, run the =submit= command from =onyx=.
 
