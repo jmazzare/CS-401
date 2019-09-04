@@ -8,7 +8,7 @@
 * Instructions
 This semester you will build a discussion board.
 
-** Discussion Board Theme
+** 1. Discussion Board Theme
 Pick a specific topic or theme that discussion baord will be about.
 
 Examples:
@@ -17,11 +17,11 @@ Examples:
 - A favorite band/sports team/destination
 
 *Requirements*
-*** Theme of discussions taking place
-*** List 3-5 categories
-*** List 3-5 example message topics per category
+*** 1.1: Theme of discussions taking place
+*** 1.2: List 3-5 categories
+*** 1.3: List 3-5 example message topics per category
 
-** User Roles
+** 2. User Roles
 Every website expects to have users. The users all have roles. For example, if someone is logged out, they might be considered a "visitor". After they log in, they may become an "admin".
 
 What are the roles of a discussion board?
@@ -38,10 +38,10 @@ What are the roles of a discussion board?
 ***** Find the dropdown with permission types, and take note of the options.
 
 *** Requirements
-**** What permissions are listed in the permission types for the user?
-**** For each of these permissions, describe that role in in your discussion board:
-***** What can that user do?
-***** What are some "actions" they will take?
+**** 2.1: What permissions are listed in the permission types for the user?
+**** 2.2: For each of these permissions, describe that role in in your discussion board:
+***** 2.2.a: What can that user do?
+***** 2.2.b: What are some "actions" they will take?
 
 *** Alternate Requirements (if phpBB is unavailable, or if you prefer)
 A discussion board will often have the roles:
@@ -50,21 +50,25 @@ A discussion board will often have the roles:
 - =moderator= A =member= with access to the comments and posts of other =members=
 - =admin= A user with access to administrative functions of the discussion board.
 
-**** Name 3 specific actions, or things the user might do, for each of the roles listed above.
+**** 2.3: Name 3 specific actions, or things the user might do, for each of the roles listed above.
 
-** Domain Name
+** 3. Domain Name
 Find a domain name that fits the theme of the website. You *do not* need to purchase the domain name, only find one.
 
 *Requirements*
-*** What is the domain name?
-*** Explain how/where you found this domain name.
-*** What is the intended use of the TLD you chose?
+*** 3.1 What is the domain name?
+*** 3.2 Explain how/where you found this domain name.
+*** 3.3 What is the intended use of the TLD you chose?
 
 * Due Date
 The assignment is due by the end of the day (midnight), Thursday Sept 5th.
 
 * Submission
 Finish the work above in a file [[file:./YOURNAME.txt]].
+- Answer/finish parts:
+---- 1.1 - 1.3
+---- 2.1 - 2.2.b /or/ 2.3
+---- 3.1 - 3.3
 - Plain text only.
 - No Word docs, no PDFs, no RTFs.
 
