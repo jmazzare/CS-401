@@ -1,0 +1,43 @@
+
+header {
+    background-color: white;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 -3px 0 #999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+header svg {
+    width: 50px;
+    margin-left: 30px;
+    https://www.boisestate.edu/wp-content/themes/core/img/theme/logos/boisestate-b-logo.svg
+}
+header svg .outline {
+    fill: var(--orange);
+}
+header svg .fill {
+    fill: var(--blue);
+}
+header a:hover svg .outline {
+    fill: var(--dark-orange);
+}
+header a:hover svg .fill {
+    fill: var(--dark-blue);
+}
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav a {
+    padding: 5px 0px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: solid 3px transparent;
+}
+header nav a:hover {
+    border-bottom: solid 3px var(--orange);
+}

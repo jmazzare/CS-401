@@ -1,0 +1,58 @@
+.modal-menu {
+    height: 100%;
+}
+.modal-menu > span {
+    height: 100%;
+    padding: 0 40px;
+    outline: none;
+    display: block;
+    line-height: var(--header-height);
+    cursor: pointer;
+    transition: all 2s ease-out;
+}
+.modal-menu > div {
+    display:none;
+    width: 100%;
+    position: fixed;
+    top: var(--header-height);
+    left: 0px;
+    height: calc(100vh - var(--header-height));
+    background-color: whitesmoke;
+}
+.modal-menu:focus-within > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    border-left: solid 3px #eee;
+    height: calc(var(--header-height) / 2);
+}
+.nav-menu > span {
+    background-color: transparent;
+    color: var(--blue);
+    height: 200%;
+    margin: calc(var(--header-height) / -4) 0px;
+    margin-left: -3px;
+}
+.nav-menu:focus-within > span,
+.nav-menu > span:hover {
+    background-color: #eee;
+    color: #555;
+}
+.search-menu > span {
+    background-color: var(--dark-orange);
+    color: white;
+}
+.search-menu:focus-within > span,
+.search-menu > span:hover {
+    background-color: var(--orange);
+}
+.search-menu > div input {
+    font-size: 3em;
+    max-width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px var(--orange);
+}

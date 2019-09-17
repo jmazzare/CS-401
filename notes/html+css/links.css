@@ -1,0 +1,42 @@
+li {
+    margin:0;
+    padding:0;
+}
+
+div.floats ul li {
+    xfloat: left;
+    display: inline-block;
+}
+
+div.position ul {
+    position: relative;
+}
+div.position ul li {
+    position: absolute;
+    top: 0;
+}
+div.position ul li:first-child {
+    left: 0;
+}
+div.position ul li:nth-child(2) {
+    left: 25%;
+}
+div.position ul li:nth-child(3) {
+    left: 50%;
+}
+div.position ul li:last-child {
+    left: 75%;
+}
+
+div.flexbox {
+    margin: 30px;
+    border: solid 1px red;
+}
+div.flexbox ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.flexbox ul li {
+}

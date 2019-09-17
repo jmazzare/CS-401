@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+     :root {
+         --size: 70px;
+     }
+     main {
+         margin: 30px;
+         display: flex;
+         flex-wrap: wrap;
+         width: calc(var(--size) * 8);
+         height: calc(var(--size) * 8);
+         border-radius: 12px;
+         border: solid 1px black;
+         box-shadow: 3px 3px 0px gray,
+                     6px 6px 0px gray;
+     }
+     div div {
+         width: var(--size);
+         height: var(--size);
+         box-sizing: border-box;
+         border: solid 1px gray;
+         background-color: silver;
+         box-shadow:
+             inset 0 0 7px rgba(255,255,255,0.9),
+             inset 0 0 17px rgba(0,0,0,0.4);
+     }
+     div:first-child :first-child {border-radius: 10px 0 0 0;}
+     div:first-child :last-child {border-radius: 0 0 0 10px; }
+     div:last-child :first-child {border-radius: 0 10px 0 0;}
+     div:last-child :last-child {border-radius: 0 0 10px 0;}
+     div:nth-child(odd) :nth-child(odd) {background-color: beige;}
+     div:nth-child(even) :nth-child(even) {background-color: beige;}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+      <div>
+        <div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </main>
+  </body>
+</html>

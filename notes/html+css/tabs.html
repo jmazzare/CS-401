@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabs Example</title>
+    <style>
+     * { box-sizing: border-box; }
+     body {
+         background-color: #555;
+     }
+     nav {
+         height: 50px;
+     }
+     nav a {
+         text-decoration: none;
+         font-family: sans-serif;
+         font-size: 14px;
+     }
+     nav ul {
+         height: inherit;
+         display: flex;
+         list-style-type: none;
+         justify-content: start;
+         align-items: flex-end;
+         margin: 0;
+     }
+     nav ul li {
+         background-color: white;
+         padding: 6px 15px 0;
+         border-radius: 70% 10px 0 0;
+         margin-right: -6px;
+         border: solid 1px black;
+         border-bottom: none;
+         box-shadow: inset 0 -1px 1px silver;
+         background-color: #CCC;
+         z-index: 1;
+     }
+     nav ul li.active {
+         background-color: #FFF;
+         box-shadow: none;
+         z-index: 2;
+     }
+     nav ul li.active a {
+         position: relative;
+         top: 2px;
+         color: black;
+     }
+     nav ul li.disabled {
+         background-color: #999;
+         z-index: 0;
+     }
+     nav ul li.disabled a {
+         color: #666;
+     }
+     main {
+         background-color: #fff;
+         font-family: Helvetica;
+         font-size: 32px;
+         font-weight: 100;
+         color: #ccc;
+         padding: 100px;
+         text-align: center;
+         min-height: calc(100vh - 50px);
+     }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Catalog</a></li>
+        <li class='active'><a href="#">Blog</a></li>
+        <li><a href="#">Shopping Cart</a></li>
+        <li class='disabled'><a href="#">My Profile</a></li>
+        <li class='disabled'><a href="#">About Us</a></li>
+      </ul >
+    </nav>
+    <main>
+      <form>
+        <label>
+          Option One
+            <input type="radio" name="options" />
+        </label>
+        <label>
+          Option Two
+            <input type="radio" name="options" />
+        </label>
+      </form>
+    </main>
+  </body>
+</html>

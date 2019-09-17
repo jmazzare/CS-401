@@ -1,0 +1,43 @@
+body {
+    background-color: lightgray;
+    font-family: sans-serif;
+    line-height: 1.3em;
+}
+
+nav,
+header,
+main {
+    margin: 0 85px;
+    padding: 1px 15px 15px 15px;
+}
+header, main {
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+
+
+nav * {
+    display: inline-block;
+}
+nav *:last-child {
+    float: right;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: #248;
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3, h4 {
+    color: #99b;
+}
+
+
+header {
+    background-color: #eee;
+}
+
+main {
+    background-color: white;
+}

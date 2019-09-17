@@ -1,0 +1,40 @@
+footer {
+    background-color: var(--blue);
+    color: white;
+    padding: 40px 100px;
+}
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer ul li {
+    width: 25%;
+    padding: 20px;
+}
+footer hr {
+    border: none;
+    border-top: solid 1px rgba(255,255,255,0.3);;
+}
+footer ul.small-print {
+    display: block;
+    font-size: 0.8em;
+}
+footer ul.small-print li {
+    display: inline-block;
+    width: auto;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#cookies-notice {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 6px black;
+}

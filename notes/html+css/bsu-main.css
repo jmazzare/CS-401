@@ -1,0 +1,120 @@
+.news-list {
+    height: calc(var(--news-height) * 1.6);
+    padding: 0;
+    margin: 40px;
+}
+.news-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.news-list li {
+    box-sizing: border-box;
+    border: solid 5px white;
+    display: block;
+    float: left;
+    height: calc(var(--news-height) / 3);
+    width: 33%;
+    background-size: cover;
+}
+.news-list li:first-child {
+    height: var(--news-height);
+    padding: 200px 0 0 60px;
+}
+.news-list li:nth-child(2),
+.news-list li:nth-child(3) {
+    padding: 30px 90px 0 0;
+    height: calc(var(--news-height) / 3);
+}
+.news-list li:nth-child(4),
+.news-list li:nth-child(5) {
+    padding: 50px 30px 0 0;
+    height: calc(var(--news-height) * 2 / 3);
+}
+.news-list li:first-child div p,
+.news-list li:nth-child(4) div p,
+.news-list li:nth-child(5) div p {
+    display: block;
+    line-height: 1.4em;
+}
+.news-list li:nth-child(2) div a,
+.news-list li:nth-child(3) div a {
+    display:block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+.news-list li:first-child div {
+    height: calc(var(--news-height));
+}
+.news-list li:nth-child(2) div,
+.news-list li:nth-child(3) div {
+    height: calc(calc(var(--news-height) / 3) - 30px);
+}
+.news-list li:nth-child(4) div,
+.news-list li:nth-child(5) div {
+    height: calc(calc(var(--news-height) * 2/ 3) - 30px);
+}
+.news-list li p {
+    display: none;
+}
+.news-item div {
+    padding: 40px;
+    background-color: white;
+}
+.news-item .date {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+.news-item a {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.welcome-screen {
+    background-color: var(--orange);
+    padding: 100px;
+    color: white;
+}
+.welcome-screen img {
+    max-width: 400px;
+    float: left;
+    margin-right: 50px;
+}
+.welcome-screen h2 {
+    font-size: 13px;
+}
+.welcome-screen strong {
+    display: block;
+    font-size: 28px;
+    margin: 40px 0;
+}
+.welcome-screen button {
+    background-color: transparent;
+    border:solid 2px white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+address {
+    font-style: normal;
+    background-color: white;
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+}
+address em {
+    display: inline-block;
+    margin: 0 40px;
+}

@@ -1,0 +1,20 @@
+:root {
+    --blue: #0033A0;
+    --dark-blue: #001180;
+    --orange: #FC6D27;
+    --dark-orange: #6b0027;
+    --header-height: 100px;
+    --news-height: 400px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    padding-top: var(--header-height);
+}
+.hidden {
+    display: none;
+}
