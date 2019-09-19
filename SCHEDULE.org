@@ -6,36 +6,67 @@
 
 * Class Schedule (subject to change)
 ** DONE <2019-08-27 Tue> Intro: How the Web Works
-** TODO <2019-08-29 Thu> Browsers/HTML
-** TODO <2019-09-03 Tue> HTML/CSS (Text Markup)
-** TODO <2019-09-05 Thu> CSS (Advanced)
-** TODO <2019-09-10 Tue> HTML Techniques
-** TODO <2019-09-12 Thu> ...continued/Web Design Best Practices
-** TODO <2019-09-17 Tue> PHP Basics & Configuration
-** TODO <2019-09-19 Thu> HTML Templating with PHP
-** TODO <2019-09-24 Tue> Object-Oriented PHP
-** TODO <2019-09-26 Thu> Form Processing
-** TODO <2019-10-01 Sun> Sanitization, Validation and Session Basics
-** TODO <2019-10-03 Thu> Database Design and SQL
-** TODO <2019-10-08 Tue> PHP Data Objects (PDO)
-** TODO <2019-10-10 Thu> More SQL
-** TODO <2019-10-15 Tue> Cookies and Sessions
-** TODO <2019-10-17 Thu> Authentication and Password Hashing
-** TODO <2019-10-22 Tue> Authentication and Password Hashing
-** TODO <2019-10-24 Thu> Logging, Composer, Midterm Review
-** TODO <2019-10-29 Tue> In-Class Midterm
-** TODO <2019-10-31 Thu> APIs, REST
-** TODO <2019-11-05 Tue> JavaScript Basics
-** TODO <2019-11-07 Thu> jQuery
-** TODO <2019-11-12 Tue> AJAX, JSON
-** TODO <2019-11-14 Thu> Web Accessibility
-** TODO <2019-11-19 Tue> Security, common exploits
-** TODO <2019-11-21 Thu> Security, best practices
-** TODO <2019-11-26 Tue> No class (Thanksgiving)
-** TODO <2019-11-28 Thu> No class (Thanksgiving)
-** TODO <2019-12-03 Tue> Frameworks, MVC
-** TODO <2019-12-05 Thu> Project Presentations
-** TODO <2019-12-10 Tue> Project Presentations
-** TODO <2019-12-12 Thu> Project Presentations
-** TODO <2019-12-17 Tue> Final Exam?
-** TODO <2019-12-19 Thu> Final Exam?
+** DONE <2019-08-29 Thu> Browsers/HTML
+** DONE <2019-09-03 Tue> HTML/CSS (Text Markup)
+** DONE <2019-09-05 Thu> CSS (Advanced)
+** DONE <2019-09-10 Tue> HTML Techniques
+*** quiz
+*** checkerboard example
+*** tabs example
+**** hover effects
+**** z-index examples
+*** form elements
+**** radio, checks
+**** inputs, labels
+**** html5
+**** browser differences
+*** Media Examples
+*** Site Design
+**** images, text
+**** colors, contrast
+**** placement
+*** Mockup Analysis
+**** boxes
+*** Mockup Implementation
+**** float/clear
+**** definition lists
+**** visibility
+** DONE <2019-09-12 Thu> ...continued/Web Design Best Practices
+** DONE <2019-09-17 Tue> HTTP
+*** Netcat - server client
+*** Telnet + netcat
+*** Netcat - animation
+*** Netcat - star wars
+*** Telnet to IP (fail)
+*** HTTP 30kft overview
+*** Telnet to IP (success)
+*** Telnet to IP chicken
+*** Same stuff, with CURL
+*** and with Postman
+** <2019-09-19 Thu> PHP Basics & HTML Templating with PHP
+** <2019-09-24 Tue> Object-Oriented PHP
+** <2019-09-26 Thu> No Class =Form Processing
+** <2019-10-01 Sun> Sanitization, Validation and Session Basics
+** <2019-10-03 Thu> Database Design and SQL
+** <2019-10-08 Tue> PHP Data Objects (PDO)
+** <2019-10-10 Thu> More SQL
+** <2019-10-15 Tue> Cookies and Sessions
+** <2019-10-17 Thu> Authentication and Password Hashing
+** <2019-10-22 Tue> Authentication and Password Hashing
+** <2019-10-24 Thu> Logging, Composer, Midterm Review
+** <2019-10-29 Tue> In-Class Midterm
+** <2019-10-31 Thu> APIs, REST
+** <2019-11-05 Tue> JavaScript Basics
+** <2019-11-07 Thu> jQuery
+** <2019-11-12 Tue> AJAX, JSON
+** <2019-11-14 Thu> Web Accessibility
+** <2019-11-19 Tue> Security, common exploits
+** <2019-11-21 Thu> Security, best practices
+** <2019-11-26 Tue> No class (Thanksgiving)
+** <2019-11-28 Thu> No class (Thanksgiving)
+** <2019-12-03 Tue> Frameworks, MVC
+** <2019-12-05 Thu> Project Presentations
+** <2019-12-10 Tue> Project Presentations
+** <2019-12-12 Thu> Project Presentations
+** <2019-12-17 Tue> Final Exam?
+** <2019-12-19 Thu> Final Exam?
