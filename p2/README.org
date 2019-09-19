@@ -1,4 +1,5 @@
-#+TITLE: P2
+#+TITLE: P2 61pts
+#+AUTHOR: joeymazzarelli@boisestate.edu
 
 * 1. HTTP
 ** Status Codes
@@ -55,11 +56,12 @@ Choose, at least:
 
 ** Logo Image
 Find or create a logo image that pertains to the topic of your discussion board.
-*** Requirements:
-**** 2.2.1 Acceptable formats: .png, .jpg, or .gif
-**** 2.2.2 Acceptable sizes (see mockups below)
-**** 2.2.3 Compress it. I will test by compressing your image at tinypng.com and comparing to the one submitted.
-** Three example content images, with the same requirements as for the logo.
+*** Image Requirements 3pts
+**** Acceptable formats: .png, .jpg, or .gif
+**** Acceptable sizes (see mockups below)
+**** Compress it. I will test by compressing your image at tinypng.com and comparing to the one submitted.
+** Content Image 3pts
+Find three example content images, with the same requirements as for the logo.
 
 * 3. HTML + CSS Implementation
 ** Semantic HTML
