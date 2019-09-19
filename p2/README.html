@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="bsu" />
+  <title>P2</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">P2</h1>
+<p class="author">bsu</p>
+</header>
+<h1 id="http">1. HTTP</h1>
+<h2 id="status-codes">Status Codes</h2>
+<h3 id="analysis">Analysis:</h3>
+<p>For each scenario, decide which HTTP status code/message should be sent to the client</p>
+<h3 id="requirements-5pts">Requirements: 5pts</h3>
+<p>Name the status codes and message for each part.</p>
+<ol>
+<li><p>1.1.1</p>
+<p>The client has requested the homepage, and the server successfully renders and returns the home page.</p></li>
+<li><p>1.1.2</p>
+<p>The client requested a product from an ecommerce site, but the ecommerce website cannot find that product it the database.</p></li>
+<li><p>1.1.3</p>
+<p>The client requested a product from an ecommerce site, but the database for the website is down. The database is not "hanging" or taking too long, it is just down.</p></li>
+<li><p>1.1.4</p>
+<p>The client has requested a page that requires them to be logged in and authenticated, but they are not logged in.</p></li>
+<li><p>1.1.5</p>
+<p>The client sends a request with an unrecognized HTTP method.</p></li>
+</ol>
+<h2 id="redirect-header">Redirect Header</h2>
+<h3 id="scenario">Scenario:</h3>
+<p>Your website had a page at: (Old URL) /blog-posts.php?uuid=xyz123</p>
+<p>After a redesign of the website, you want to change the url to: (New URL) /blog/posts/xyz123.html</p>
+<p>You have been asked to write the code to redirect HTTP requests for the old URL to the new URL.</p>
+<h3 id="analysis-1">Analysis:</h3>
+<p>You need to decide:</p>
+<ul>
+<li>What HTTP status code you will send to the client (browser)</li>
+<li>What HTTP header you will send to the client (browser)</li>
+</ul>
+<h3 id="requirements-5pts-1">Requirements: 5pts</h3>
+<ol>
+<li><p>1.2</p>
+<p>For an incoming request to "<em>blog-posts.php?uuid=xyz123</em>", write out, in plain HTTP text, the first two lines of the server response that will redirect the client to "/blog/posts/xyz123.html"</p></li>
+</ol>
+<h1 id="website-personalization">2. Website Personalization</h1>
+<p>It is time to make some decisions about the look feel of your discussion board.</p>
+<h2 id="color-palette">Color Palette</h2>
+<p>Choose a color palette. Search the internet for "color palette generator" or some similar term. Find a set of colors you like.</p>
+<p>Choose, at least:</p>
+<ul>
+<li>a background color for the various sections of the page (header, sidebar, main content, footer)</li>
+<li>a foreground color for the various sections</li>
+<li>a couple accent colors (links, headings, buttons, borders)</li>
+</ul>
+<h2 id="logo-image">Logo Image</h2>
+<p>Find or create a logo image that pertains to the topic of your discussion board.</p>
+<h3 id="requirements">Requirements:</h3>
+<ol>
+<li><p>2.2.1 Acceptable formats: .png, .jpg, or .gif</p></li>
+<li><p>2.2.2 Acceptable sizes (see mockups below)</p></li>
+<li><p>2.2.3 Compress it. I will test by compressing your image at tinypng.com and comparing to the one submitted.</p></li>
+</ol>
+<h2 id="three-example-content-images-with-the-same-requirements-as-for-the-logo.">Three example content images, with the same requirements as for the logo.</h2>
+<h1 id="html-css-implementation">3. HTML + CSS Implementation</h1>
+<h2 id="semantic-html">Semantic HTML</h2>
+<p>The file at <a href="file:./template.html">file:./template.html</a> is made of many nested divs. <strong>Requirements:</strong></p>
+<h3 id="pts">3.1 10pts</h3>
+<ul>
+<li>Copy <a href="file:./template.html">file:./template.html</a> to <a href="file:./semantic.html">file:./semantic.html</a></li>
+<li>Edit <a href="file:./semantic.html">file:./semantic.html</a> to use semantic HTML elements instead of divs, where appropriate.</li>
+</ul>
+<h2 id="css">CSS</h2>
+<h3 id="pts-1">3.2 25pts</h3>
+<p>Style the <a href="file:./template.html">file:./template.html</a> according to the supplied designs.</p>
+<ul>
+<li>Add a &lt;link&gt; in the HTML head to <a href="file:./style.css">file:./style.css</a></li>
+<li>Edit <a href="file:./style.css">file:./style.css</a> according to the layouts in <a href="file:./top-scroll.png">file:./top-scroll.png</a> and <a href="file:./bottom-scroll.png">file:./bottom-scroll.png</a>
+<ul>
+<li>Use <code>absolute positioning</code> to place the header, sidebar, and main contents divs</li>
+<li>use <code>calc()</code> and virtual widths and heights to determine the coordinates</li>
+<li>The mockups only show the layout requirements. For reference only, the various sections have been given distinct color backgrounds.</li>
+<li>The colors , borders, shadows, fonts, etc., are up to you. Give the document your own style, while maintain the layout shown in the mockups.</li>
+<li>The header is fixed to the top of the screen</li>
+<li>The sidebar is fixed to the left side of the screen</li>
+<li>The main content scrolls as needed, and independent of the sidebar and header</li>
+<li>The footer is at the bottom of the content</li>
+</ul></li>
+<li>Name your images so they match the names in the HTML source. Adjust the file type to <code>.jpg</code> or <code>.gif</code>, if needed.</li>
+</ul>
+<h2 id="more-html-css">More HTML + CSS</h2>
+<h3 id="pts-2">3.3 10pts</h3>
+<ul>
+<li>Copy <a href="file:./template.html">file:./template.html</a> to <a href="file:./login.html">file:./login.html</a></li>
+<li>Remove the main contents, and add a login form.</li>
+<li>The login form should:
+<ul>
+<li>Be centered both horizontally and vertically</li>
+<li>Have a label "Username" following by a text input</li>
+<li>Have a label "Password" following by a password input</li>
+<li>A Submit button with the text "Login" (or something other than the default)</li>
+</ul></li>
+<li>The "Username" input field should automatically focus of the cursor.</li>
+<li>The inputs should focus when the label is clicked.</li>
+<li>Add your style rules to <a href="file:./style.css">file:./style.css</a></li>
+</ul>
+<h1 id="due-date-submission">4. Due Date &amp; Submission</h1>
+<h2 id="due-date">Due Date</h2>
+<p>The assignment is due by the end of the day (midnight), Wednesday October 2th.</p>
+<h2 id="submission">Submission</h2>
+<p>Answer the questions from part 1, in a file called <a href="file:./part-1.txt">file:./part-1.txt</a></p>
+<p>You should be submitting the following files:</p>
+<ul>
+<li><a href="file:./part-1.text">file:./part-1.text</a></li>
+<li><a href="file:./template.html">file:./template.html</a></li>
+<li><a href="file:./semantic.html">file:./semantic.html</a></li>
+<li><a href="file:./login.html">file:./login.html</a></li>
+<li><a href="file:./style.css">file:./style.css</a></li>
+<li><a href="file:./logo-image.png">file:./logo-image.png</a></li>
+<li><a href="file:./image-1.png">file:./image-1.png</a></li>
+<li><a href="file:./image-2.png">file:./image-2.png</a></li>
+<li><a href="file:./image-3.png">file:./image-3.png</a></li>
+</ul>
+<p>From the directory containing your work, run the <code>submit</code> command from <code>onyx</code>.</p>
+<p><code>submit joeymazzarelli cs401 p2</code></p>
+<p>This command will pick up all files in the current directory (as well as any subdirectories recursively) and time-stamp them before transferring the combined files to the instructor’s account.</p>
+</body>
+</html>

@@ -1,0 +1,123 @@
+#+TITLE: P2
+
+* 1. HTTP
+** Status Codes
+*** Analysis:
+For each scenario, decide which HTTP status code/message should be sent to the client
+
+*** Requirements: 5pts
+Name the status codes and message for each part.
+**** 1.1.1
+The client has requested the homepage, and the server successfully renders and returns the home page.
+**** 1.1.2
+The client requested a product from an ecommerce site, but the ecommerce website cannot find that product it the database.
+**** 1.1.3
+The client requested a product from an ecommerce site, but the database for the
+website is down. The database is not "hanging" or taking too long, it is just down.
+**** 1.1.4
+The client has requested a page that requires them to be logged in and
+authenticated, but they are not logged in.
+**** 1.1.5
+The client sends a request with an unrecognized HTTP method.
+
+** Redirect Header
+*** Scenario:
+Your website had a page at: (Old URL)
+/blog-posts.php?uuid=xyz123
+
+After a redesign of the website, you want to change the url to: (New URL)
+/blog/posts/xyz123.html
+
+You have been asked to write the code to redirect HTTP requests for
+the old URL to the new URL.
+
+*** Analysis:
+You need to decide:
+- What HTTP status code you will send to the client (browser)
+- What HTTP header you will send to the client (browser)
+
+*** Requirements: 5pts
+**** 1.2
+For an incoming request to "/blog-posts.php?uuid=xyz123/",
+write out, in plain HTTP text, the first two lines of the server response
+that will redirect the client to "/blog/posts/xyz123.html"
+
+* 2. Website Personalization
+It is time to make some decisions about the look feel of your discussion board.
+** Color Palette
+Choose a color palette. Search the internet for "color palette generator" or
+some similar term. Find a set of colors you like.
+
+Choose, at least:
+- a background color for the various sections of the page (header, sidebar, main content, footer)
+- a foreground color for the various sections
+- a couple accent colors (links, headings, buttons, borders)
+
+** Logo Image
+Find or create a logo image that pertains to the topic of your discussion board.
+*** Requirements:
+**** 2.2.1 Acceptable formats: .png, .jpg, or .gif
+**** 2.2.2 Acceptable sizes (see mockups below)
+**** 2.2.3 Compress it. I will test by compressing your image at tinypng.com and comparing to the one submitted.
+** Three example content images, with the same requirements as for the logo.
+
+* 3. HTML + CSS Implementation
+** Semantic HTML
+The file at file:./template.html is made of many nested divs.
+*Requirements:*
+*** 3.1 10pts
+- Copy file:./template.html to file:./semantic.html
+- Edit file:./semantic.html to use semantic HTML elements instead of divs, where appropriate.
+** CSS
+*** 3.2 25pts
+Style the file:./template.html according to the supplied designs.
+- Add a <link> in the HTML head to file:./style.css
+- Edit file:./style.css according to the layouts in file:./top-scroll.png and file:./bottom-scroll.png
+  - Use ~absolute positioning~ to place the header, sidebar, and main contents divs
+  - use ~calc()~ and virtual widths and heights to determine the coordinates
+  - The mockups only show the layout requirements. For reference only, the various
+    sections have been given distinct color backgrounds.
+  - The colors , borders, shadows, fonts, etc., are up to you. Give the document
+    your own style, while maintain the layout shown in the mockups.
+  - The header is fixed to the top of the screen
+  - The sidebar is fixed to the left side of the screen
+  - The main content scrolls as needed, and independent of the sidebar and header
+  - The footer is at the bottom of the content
+- Name your images so they match the names in the HTML source. Adjust the file type to =.jpg= or =.gif=, if needed.
+** More HTML + CSS
+*** 3.3 10pts
+- Copy file:./template.html to file:./login.html
+- Remove the main contents, and add a login form.
+- The login form should:
+  - Be centered both horizontally and vertically
+  - Have a label "Username" following by a text input
+  - Have a label "Password" following by a password input
+  - A Submit button with the text "Login" (or something other than the default)
+- The "Username" input field should automatically focus of the cursor.
+- The inputs should focus when the label is clicked.
+- Add your style rules to file:./style.css
+
+* 4. Due Date & Submission
+
+** Due Date
+The assignment is due by the end of the day (midnight), Wednesday October 2th.
+
+** Submission
+Answer the questions from part 1, in a file called file:./part-1.txt
+
+You should be submitting the following files:
+- file:./part-1.text
+- file:./template.html
+- file:./semantic.html
+- file:./login.html
+- file:./style.css
+- file:./logo-image.png
+- file:./image-1.png
+- file:./image-2.png
+- file:./image-3.png
+
+From the directory containing your work, run the =submit= command from =onyx=.
+
+=submit joeymazzarelli cs401 p2=
+
+This command will pick up all files in the current directory (as well as any subdirectories recursively) and time-stamp them before transferring the combined files to the instructor’s account.

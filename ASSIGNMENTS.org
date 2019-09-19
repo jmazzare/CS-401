@@ -5,5 +5,12 @@
 [[file:./README.org][class info]]
 
 * Project 1
-Project Analysis + Requirements
+- Project Analysis + Requirements
+
 [[file:./p1/README.org]]
+
+* Project 2
+- HTTP
+- Discussion Board HTML and CSS
+
+[[file:./p2/README.org]]
