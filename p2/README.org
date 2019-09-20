@@ -38,7 +38,7 @@ You need to decide:
 
 *** Requirements: 5pts
 **** 1.2
-For an incoming request to "/blog-posts.php?uuid=xyz123/", write out, in plain HTTP text, the first two lines of the server response that will redirect the client to "/blog/posts/xyz123.html"
+For an incoming request to "/blog-posts.php?uuid=xyz123", write out, in plain HTTP text, the first two lines of the server response that will redirect the client to "/blog/posts/xyz123.html"
 
 * 2. Website Personalization
 It is time to make some decisions about the look feel of your discussion board.
