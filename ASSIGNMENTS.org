@@ -15,7 +15,7 @@
 
 [[file:./p2/README.org]]
 
-* Project 2
+* Project 3
 - PHP
 
 [[file:./p3/README.org]]
