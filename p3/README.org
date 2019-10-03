@@ -1,0 +1,149 @@
+#+TITLE: P3 50pts
+#+AUTHOR: joeymazzarelli@boisestate.edu
+
+* 1. Assignment Details
+** Autoloading
+PHP includes a feature that allows the developer to dynamically incude a source
+code file when a class is not yet defined. See https://php.net/spl_autoload_register
+
+The file file:./1-autoload/main.php is set up to use such an autoloader. The
+function for autoloading is in file:./1-autoload/autoload.php, but is incomplete.
+
+When completed, the PHP script should automatically find and include the correct
+source code file. Running main, ~php 1-autoload/main.php~ ought to display an elephant.
+
+If for some reason, thre is no source code file for the class being
+instantiated, the autoloader should throw an Exception with the message:
+=Expected to find: <$path> for: <$class>= where ~$path~ is the relative path from
+the autoloader file, and $class is the of the ~$class~ being loaded.
+
+Also, the file file:./1-autoload/languages/php/mascot.php is missing a magic method
+for printing the Mascot object as a string.
+
+*** Requirements
+**** 1.1 (15pts) Complete the auto-loading function in file:./1-autoload/autoload.php
+***** 1.1.1 Filenames should _always_ be lowercase
+Assume all file names are in lowercase.
+***** 1.1.2 It should work on Windows and Linux (see https://www.php.net/manual/en/dir.constants.php)
+See the "directory separator" constant.
+***** 1.1.3 It should throw an exception when it cannot find the source code.
+The exception should say: "Expected to find: <$path> for: <$class>"
+**** 1.2 (5pts) Add a "to string" method to the Mascot class so the elephant is printed to screen.
+
+** Arrays and Objects
+Consider the following code:
+#+BEGIN_SRC php
+$users = [
+    new User('don@joe.com'),
+    new User('jane@doe.com'),
+];
+
+$activity = [
+    "don@joe.com" => [[22,3], [28,2], [17, 3]],
+    "jane@doe.com" => [[23,4], [36,5], [23, 2]],
+    "every@example.com" => [[31,2], [29,5], [21, 0]],
+];
+#+END_SRC
+
+The first variable, ~$users~, contains the valid list of users.
+
+The second variable, ~$activity~, contains a data sequence for all users, even
+invalid ones. In this example, =every@example.com= would be considered "invalid".
+
+The sequence of data represents "impressions" and "clicks" for a series of days.
+In this example =don@joe.com= had 22 impressions and 3 clicks on the first day,
+28 impressions and 2 clicks for day 2, and 17 impressions and 3 clicks for the
+last day. And so on for the other users.
+
+In file:./2-rolling-average/lib.php, there is a function named
+~rolling_averages~. This function must calculate a 2-day rolling average. The
+first two days (i=0,1) are averaged by summing their parts, and calculating the average.
+Then the same formula is provided to the second two days (i=1,2). And so on.
+
+For a given list of clicks and impressions of length N, there will end up being
+N-1 averages in the resulting array.
+
+The average to calculate is the "click-through rate", which is clicks divided by
+impressions. If there are 2 impressions, and 1 click, that is a 0.50
+click-through rate. Only valid users, as defined above, should be included in the results.
+
+The format of the result should be an array indexed by the email, with a list of
+rolling averages. The averages must be rounded to two decimal points.
+
+Rolling average results for the data above:
+#+BEGIN_SRC text
+Array
+(
+    [don@joe.com] => Array
+        (
+            [0] => 0.10
+            [1] => 0.11
+        )
+
+    [jane@doe.com] => Array
+        (
+            [0] => 0.15
+            [1] => 0.12
+        )
+)
+#+END_SRC
+
+*** Requirements
+**** 2.1 (15pts) Implement the =rolling_averages()= function in file:./2-rolling-average/lib.php
+
+** Searching
+In file:./3-searching/data.csv, there is a directory of sorts. It contains an
+ID, a name and email, and some miscellaneous text. Pass the path to this file,
+along with a search term, into the function =search_directory= found in file:./3-searching/lib.php.
+
+#+BEGIN_SRC php
+$results = search_directory(__DIR__ . '/data.csv', 'don');
+print_r($results);
+#+END_SRC
+
+The function:
+ - get the contents of the file,
+ - loop over every line,
+ - try to match (case-insensitive) the name or email against the search term
+ - return a list of emails that do match
+ - the miscellaneous text should _not_ be searched
+
+This should print:
+#+BEGIN_SRC text
+Array
+(
+    [0] => don@joe.com
+)
+#+END_SRC
+
+*** Requirements
+**** 3.1 (15pts) Implement the =search_directory()= function in file:./3-searching/lib.php
+
+
+* 2. Due Date & Submission
+
+** Tests
+Some example tests have been provided in file:./tests
+
+You can run them with PHP. When they succeed, there will be no output.
+
+#+BEGIN_SRC bash
+php tests/1-autoload.php
+php tests/1-rolling-averages.php
+php tests/1-searching.php
+#+END_SRC
+
+** Due Date
+The assignment is due by the end of the day (midnight), Monday October 14th.
+
+** Submission
+Complete the requirements above and submit all the files in this directory,
+including the tests.
+
+From the directory containing your work, run the =submit= command from =onyx=.
+
+=submit joeymazzarelli cs401 p3=
+
+This command will pick up all files in the current directory (as well as any
+subdirectories recursively) and time-stamp them before transferring the combined
+files to the instructor’s account.

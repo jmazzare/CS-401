@@ -14,3 +14,8 @@
 - Discussion Board HTML and CSS
 
 [[file:./p2/README.org]]
+
+* Project 2
+- PHP
+
+[[file:./p3/README.org]]
