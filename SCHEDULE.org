@@ -43,14 +43,14 @@
 *** Telnet to IP chicken
 *** Same stuff, with CURL
 *** and with Postman
-** <2019-09-19 Thu> PHP Basics & HTML Templating with PHP
-** <2019-09-24 Tue> Object-Oriented PHP
-** <2019-09-26 Thu> No Class =Form Processing
-** <2019-10-01 Sun> Sanitization, Validation and Session Basics
+** DONE <2019-09-19 Thu> PHP Basics & HTML Templating with PHP
+** DONE <2019-09-24 Tue> Object-Oriented PHP
+** DONE <2019-09-26 Thu> No Class =On Web Typography= video
+** DONE <2019-10-01 Tue> Forms and Session Basics
 ** <2019-10-03 Thu> Database Design and SQL
 ** <2019-10-08 Tue> PHP Data Objects (PDO)
 ** <2019-10-10 Thu> More SQL
-** <2019-10-15 Tue> Cookies and Sessions
+** <2019-10-15 Tue> Sanitization, Validation and Cookies
 ** <2019-10-17 Thu> Authentication and Password Hashing
 ** <2019-10-22 Tue> Authentication and Password Hashing
 ** <2019-10-24 Thu> Logging, Composer, Midterm Review

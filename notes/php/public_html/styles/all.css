@@ -1,0 +1,121 @@
+* { box-sizing: border-box }
+body {
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+h1 {
+    margin: 20px 0;
+    font-variant: small-caps;
+    float: left;
+    font-size: 15px;
+}
+h1 > a {
+    color: #249;
+    text-decoration: none;
+    background-color: white;
+    float: left;
+}
+h1 > a:hover:not(.disabled) {
+    background-color: white;
+    color: black;
+}
+a {
+    display: block;
+    float: right;
+    background-color: #57c;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+a:hover:not(.disabled) {
+    background-color: #469;
+    color: yellow;
+}
+img {
+    display: block;
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    margin: 20px 0;
+}
+p {
+    margin: 20px 0;
+    font-size: 25px;
+    color: #abc;
+}
+
+.gallery h1 {
+    float: none;
+}
+.gallery a:not(.home) {
+    float: none;
+    position: absolute;
+    display: inline-block;
+    transform: rotate(-90deg);
+    padding: 10px 30px;
+    margin: 0;
+}
+.gallery a.disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+.gallery a:not(.home):first-of-type {
+    left: -75px;
+    top: 170px;
+}
+.gallery a:not(.home):nth-of-type(2) {
+    top: 170px;
+    left: 275px;
+}
+hr { border:none; }
+.gallery hr ~ a { display: none !important; }
+
+a + a {clear:both;}
+
+.list > a {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.list > a img {
+    width: 65px;
+    height: auto;
+    margin: 0;
+}
+dl {
+    flex: 1;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+.list > a:last-child {
+    margin-bottom: 20px;
+}
+dt {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+}
+dt, dd {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+dl dd:after {
+    content: 'x';
+    display: block;
+    height: 1px;
+    margin-top: 2px;
+    overflow: hidden;
+    border-top: solid 1px skyblue;
+}
+dl dd:last-child:after {
+    border-top: none;
+}

@@ -1,0 +1,9 @@
+* Running
+
+First run the built-in PHP server
+#+BEGIN_SRC bash
+cd ./public_html
+php -S localhost:8000 &
+#+END_SRC
+
+Then open http://localhost:8000
