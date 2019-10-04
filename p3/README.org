@@ -10,9 +10,11 @@ The file [[file:./1-autoload/main.php]] is set up to use such an autoloader. The
 function for autoloading is in [[file:./1-autoload/autoload.php]], but is incomplete.
 
 When completed, the PHP script should automatically find and include the correct
-source code file. Running main, ~php 1-autoload/main.php~ ought to display an elephant.
+source code file. You can verify by running the main php script:
 
-If for some reason, thre is no source code file for the class being
+~php 1-autoload/main.php~ ought to display an elephant.
+
+If, for some reason, there is no source code file for the class being
 instantiated, the autoloader should throw an Exception with the message:
 =Expected to find: <$path> for: <$class>= where ~$path~ is the relative path from
 the autoloader file, and $class is the of the ~$class~ being loaded.
