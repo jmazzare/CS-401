@@ -6,8 +6,8 @@
 PHP includes a feature that allows the developer to dynamically incude a source
 code file when a class is not yet defined. See https://php.net/spl_autoload_register
 
-The file file:./1-autoload/main.php is set up to use such an autoloader. The
-function for autoloading is in file:./1-autoload/autoload.php, but is incomplete.
+The file [[file:./1-autoload/main.php]] is set up to use such an autoloader. The
+function for autoloading is in [[file:./1-autoload/autoload.php]], but is incomplete.
 
 When completed, the PHP script should automatically find and include the correct
 source code file. Running main, ~php 1-autoload/main.php~ ought to display an elephant.
@@ -17,11 +17,11 @@ instantiated, the autoloader should throw an Exception with the message:
 =Expected to find: <$path> for: <$class>= where ~$path~ is the relative path from
 the autoloader file, and $class is the of the ~$class~ being loaded.
 
-Also, the file file:./1-autoload/languages/php/mascot.php is missing a magic method
+Also, the file [[file:./1-autoload/languages/php/mascot.php]] is missing a magic method
 for printing the Mascot object as a string.
 
 *** Requirements
-**** 1.1 (15pts) Complete the auto-loading function in file:./1-autoload/autoload.php
+**** 1.1 (15pts) Complete the auto-loading function in [[file:./1-autoload/autoload.php]]
 ***** 1.1.1 Filenames should _always_ be lowercase
 Assume all file names are in lowercase.
 ***** 1.1.2 It should work on Windows and Linux (see https://www.php.net/manual/en/dir.constants.php)
@@ -55,7 +55,7 @@ In this example =don@joe.com= had 22 impressions and 3 clicks on the first day,
 28 impressions and 2 clicks for day 2, and 17 impressions and 3 clicks for the
 last day. And so on for the other users.
 
-In file:./2-rolling-average/lib.php, there is a function named
+In [[file:./2-rolling-average/lib.php]], there is a function named
 ~rolling_averages~. This function must calculate a 2-day rolling average. The
 first two days (i=0,1) are averaged by summing their parts, and calculating the average.
 Then the same formula is provided to the second two days (i=1,2). And so on.
@@ -89,12 +89,12 @@ Array
 #+END_SRC
 
 *** Requirements
-**** 2.1 (15pts) Implement the =rolling_averages()= function in file:./2-rolling-average/lib.php
+**** 2.1 (15pts) Implement the =rolling_averages()= function in [[file:./2-rolling-average/lib.php]]
 
 ** Searching
-In file:./3-searching/data.csv, there is a directory of sorts. It contains an
+In [[file:./3-searching/data.csv]], there is a directory of sorts. It contains an
 ID, a name and email, and some miscellaneous text. Pass the path to this file,
-along with a search term, into the function =search_directory= found in file:./3-searching/lib.php.
+along with a search term, into the function =search_directory= found in [[file:./3-searching/lib.php]].
 
 #+BEGIN_SRC php
 $results = search_directory(__DIR__ . '/data.csv', 'don');
@@ -117,13 +117,13 @@ Array
 #+END_SRC
 
 *** Requirements
-**** 3.1 (15pts) Implement the =search_directory()= function in file:./3-searching/lib.php
+**** 3.1 (15pts) Implement the =search_directory()= function in [[file:./3-searching/lib.php]]
 
 
 * 2. Due Date & Submission
 
 ** Tests
-Some example tests have been provided in file:./tests
+Some example tests have been provided in [[file:./tests]]
 
 You can run them with PHP. When they succeed, there will be no output.
 
