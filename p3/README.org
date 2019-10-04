@@ -17,7 +17,7 @@ source code file. You can verify by running the main php script:
 If, for some reason, there is no source code file for the class being
 instantiated, the autoloader should throw an Exception with the message:
 =Expected to find: <$path> for: <$class>= where ~$path~ is the relative path from
-the autoloader file, and $class is the of the ~$class~ being loaded.
+the autoloader file, and ~$class~ is the of the class being loaded.
 
 Also, the file [[file:./1-autoload/languages/php/mascot.php]] is missing a magic method
 for printing the Mascot object as a string.
