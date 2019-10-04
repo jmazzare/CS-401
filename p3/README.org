@@ -50,12 +50,14 @@ $activity = [
 The first variable, ~$users~, contains the valid list of users.
 
 The second variable, ~$activity~, contains a data sequence for all users, even
-invalid ones. In this example, =every@example.com= would be considered "invalid".
+invalid ones. In this example, =every@example.com= would be considered "invalid"
+since it is not in the ~$users~ array.
 
 The sequence of data represents "impressions" and "clicks" for a series of days.
 In this example =don@joe.com= had 22 impressions and 3 clicks on the first day,
 28 impressions and 2 clicks for day 2, and 17 impressions and 3 clicks for the
-last day. And so on for the other users.
+last day. And so on for the other users. This example only has 3 days worth of
+data, but it should handle any number of days.
 
 In [[file:./2-rolling-average/lib.php]], there is a function named
 ~rolling_averages~. This function must calculate a 2-day rolling average. The
@@ -65,9 +67,9 @@ Then the same formula is provided to the second two days (i=1,2). And so on.
 For a given list of clicks and impressions of length N, there will end up being
 N-1 averages in the resulting array.
 
-The average to calculate is the "click-through rate", which is clicks divided by
-impressions. If there are 2 impressions, and 1 click, that is a 0.50
-click-through rate. Only valid users, as defined above, should be included in the results.
+To calculate the average, divide the number clicks by the number of impressions.
+If there are 2 impressions and 1 click, that is a 0.50 click-through rate. Only
+valid users, as defined above, should be included in the results.
 
 The format of the result should be an array indexed by the email, with a list of
 rolling averages. The averages must be rounded to two decimal points.
@@ -95,7 +97,7 @@ Array
 
 ** Searching
 In [[file:./3-searching/data.csv]], there is a directory of sorts. It contains an
-ID, a name and email, and some miscellaneous text. Pass the path to this file,
+ID, a name and email, and some miscellaneous text. In PHP, you will pass the path to this file,
 along with a search term, into the function =search_directory= found in [[file:./3-searching/lib.php]].
 
 #+BEGIN_SRC php
@@ -103,14 +105,15 @@ $results = search_directory(__DIR__ . '/data.csv', 'don');
 print_r($results);
 #+END_SRC
 
-The function:
- - get the contents of the file,
- - loop over every line,
- - try to match (case-insensitive) the name or email against the search term
- - return a list of emails that do match
- - the miscellaneous text should _not_ be searched
+The function should:
+ - Get the contents of the file,
+ - Loop over every line,
+ - Try to match (case-insensitive) the name or email against the search term
+ - Return a list of emails that do match
 
-This should print:
+Note that the miscellaneous text _should not_ be searched.
+
+The script above should print:
 #+BEGIN_SRC text
 Array
 (
