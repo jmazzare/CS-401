@@ -1,0 +1,101 @@
+#+TITLE: P4 65pts
+#+AUTHOR: joeymazzarelli@boisestate.edu
+
+* Assignment Details
+** Table Creation (25pts)
+*Task* To finish the set-up script at [[./setup.sql]]
+
+The image [[./schema.png]] contains a graphical overview of the schema.
+
+Using ~CREATE~ statements, create the tables and columns needed.
+
+- Use auto-increment for the IDs
+- Use Primary Keys for IDs and Unique on emails and slugs.
+- Create foreign-key constraints on all foreign-keys
+- Use the DATETIME type for all date-time fields
+- Use the BOOLEAN type for the various flags
+
+
+** Data Loading (15pts)
+
+*Task* To finish the data-loading script at [[./seed.sql]]
+
+Using ~CREATE~ statements, fill the database with categories and sub-categories
+- 3 Top Level Categories
+- 3 Sub Categories Each
+
+Using ~CREATE~ statements, fill the database with posts and comments for those posts.
+- 3 Posts per Sub Category
+- 3 Comments per Post
+
+Using ~CREATE~ statements, fill the user accounts of all kinds
+- 3 User Accounts
+- 2 Moderators
+- 1 Admin
+
+** Queries (25pts)
+
+*Task* To implement the following queries in [[./queries.sql]]
+
+*** Select Active User Accounts (5pt)
+Select all the User accounts by joining the =Account= table with the =User=
+table. The account must have a validated email. (The ~validated_at~ timestamp
+must not be NULL)
+
+*** Select Active Super Users (5pt)
+Select all Accounts that are either Admins or Moderators. These account must
+also be validated, as above.
+
+*** Select Child Categories (5pt)
+If a category has a reference to another ~category_id~, it is a child of that
+category. If the category does not have such a reference, it is considered top-level.
+For each top-level category, write a query to select all the child Categories.
+
+*** Select Posts for Child Categories (5pt)
+For each child category, write a query to select all the Posts for that
+category. The posts must be ordered by their ~created_at~ timestamp.
+
+*** Count Posts for Top-Level Categories (5pt)
+For each top-level category, write a query to select the number of Posts for that
+category. The count should include Posts within any of the child-categories of
+the top-level category.
+
+* Due Date & Submission
+
+** Check Your Work
+1. Create and run a script to drop your tables:
+#+BEGIN_SRC sql
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE account;
+-- ...
+#+END_SRC
+
+2. Create your tables:
+#+BEGIN_SRC bash
+cat setup.sql | mysql -u root
+#+END_SRC
+
+3. Seed the database:
+#+BEGIN_SRC bash
+cat seed.sql | mysql -u root
+#+END_SRC
+
+3. Run your queries:
+#+BEGIN_SRC bash
+cat queries.sql | mysql -u root
+#+END_SRC
+
+** Due Date
+The assignment is due by the end of the day (midnight), Friday October 18th.
+
+** Submission
+Complete the requirements above and submit all the files in this directory,
+including the tests.
+
+From the directory containing your work, run the =submit= command from =onyx=.
+
+=submit joeymazzarelli cs401 p4=
+
+This command will pick up all files in the current directory (as well as any
+subdirectories recursively) and time-stamp them before transferring the combined
+files to the instructor’s account.

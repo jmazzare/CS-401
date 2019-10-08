@@ -19,3 +19,9 @@
 - PHP exercises
 
 [[file:./p3/README.org]]
+
+* Project 4
+- Database Setup
+- Database Queries
+
+[[file:./p4/README.org]]
