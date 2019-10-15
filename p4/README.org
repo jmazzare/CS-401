@@ -20,15 +20,15 @@ Using ~CREATE~ statements, create the tables and columns needed.
 
 *Task* To finish the data-loading script at [[./seed.sql]]
 
-Using ~CREATE~ statements, fill the database with categories and sub-categories
+Using ~INSERT~ statements, fill the database with categories and sub-categories
 - 3 Top Level Categories
 - 3 Sub Categories Each
 
-Using ~CREATE~ statements, fill the database with posts and comments for those posts.
+Using ~INSERT~ statements, fill the database with posts and comments for those posts.
 - 3 Posts per Sub Category
 - 3 Comments per Post
 
-Using ~CREATE~ statements, fill the user accounts of all kinds
+Using ~INSERT~ statements, fill the user accounts of all kinds
 - 3 User Accounts
 - 2 Moderators
 - 1 Admin
