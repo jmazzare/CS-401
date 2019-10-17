@@ -47,16 +47,40 @@
 ** DONE <2019-09-24 Tue> Object-Oriented PHP
 ** DONE <2019-09-26 Thu> No Class =On Web Typography= video
 ** DONE <2019-10-01 Tue> Forms and Session Basics
-** <2019-10-03 Thu> Database Design and SQL
-** <2019-10-08 Tue> PHP Data Objects (PDO)
-** <2019-10-10 Thu> More SQL
+** DONE <2019-10-03 Thu> Glitch.com LAMP Stack
+** PROJ <2019-10-08 Tue> Database Design and SQL
+*** Create a login form to access a protected page.
+**** A Database
+- Users table
+- An Audit table
+**** A shared libary of functions to:
+- check if a user is logged in or not
+  checking session
+- redirect to the proper page
+- check a username/password
+- display the list of users
+  - optional argument for sorting
+  - optional argument for paging
+**** Protected Admin Page
+***** Logout button
+***** List all users in the database
+- Show a table with 1 user per row
+- Make the table header clickable for sorting
+**** Unprotected Login Page
+***** A login form
+***** A login form action/handler
+**** Logout Page
+***** A login form
+***** A login form action/handler
+
+** <2019-10-10 Thu> PHP Data Objects (PDO)
 ** <2019-10-15 Tue> Sanitization, Validation and Cookies
-** <2019-10-17 Thu> Authentication and Password Hashing
-** <2019-10-22 Tue> Authentication and Password Hashing
-** <2019-10-24 Thu> Logging, Composer, Midterm Review
-** <2019-10-29 Tue> In-Class Midterm
-** <2019-10-31 Thu> APIs, REST
-** <2019-11-05 Tue> JavaScript Basics
+** <2019-10-17 Thu> Files / Regular Expressions
+** <2019-10-22 Tue> Review
+** <2019-10-24 Thu> Midterm
+** <2019-10-29 Tue> APIs, REST 
+** <2019-10-31 Thu> JavaScript Basics
+** <2019-11-05 Tue> Javascript
 ** <2019-11-07 Thu> jQuery
 ** <2019-11-12 Tue> AJAX, JSON
 ** <2019-11-14 Thu> Web Accessibility
