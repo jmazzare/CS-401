@@ -25,3 +25,8 @@
 - Database Queries
 
 [[file:./p4/README.org]]
+
+* Project 5
+- PHP Discussion Board Application
+
+[[file:./p5/README.org]]
