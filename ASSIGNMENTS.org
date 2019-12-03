@@ -29,4 +29,4 @@
 * Project 5
 - PHP Discussion Board Application
 
-[[file:./p5/README.org]]
+http://cs-401.hehm.net/
